@@ -1,0 +1,147 @@
+:root {
+  --clr-dark: #201e43;
+  --clr-slate-800: #1e293b;
+  --clr-slate-600: #475569;
+  --clr-slate-400: #94a3b8;
+  --clr-light: #eeeeee;
+  --clr-grade2: #134b70;
+  --clr-btn: #508c9b;
+
+  /*sizes*/
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "General Sans", sans-serif;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+button {
+  background-color: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*price page - head-sec*/
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.header__menu {
+  display: none;
+}
+.header__bars {
+  color: var(--clr-light);
+  height: var(--size-2xl);
+  width: var(--size-2xl);
+  display: block;
+}
+
+/*price page footer sec*/
+.footer-1-mail {
+  display: block;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-2 {
+  display: flex;
+  gap: 2rem;
+}
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/*price page join sec*/
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  border: #508c9b solid 0.5px;
+  border-radius: 15px;
+}
+.join--heading {
+  font-size: var(--size-3xl);
+}
+.join--desc {
+  font-size: var(--size-sm);
+}
+/*price page --preice card section*/
+.price-cards-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: #508c9b solid 0.5px;
+  border-radius: 15px;
+}
+.plan {
+  font-size: var(--size-lg);
+}
+.price-main {
+  font-size: var(--size-5xl);
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.features-included-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.features-included {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tic-icon {
+  font-size: var(--size-lg);
+}
+.price-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
