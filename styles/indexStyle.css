@@ -91,12 +91,14 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 .feature_span {
   font-size: var(--size-sm);
 }
 .feature_main_head {
   font-size: var(--size-3xl);
+  text-align: center;
 }
 
 /*index page - feature-card-sec*/
@@ -108,6 +110,11 @@ svg {
   gap: 1rem;
   border: #508c9b solid 0.5px;
   border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
 }
 
 .features_1 {
@@ -122,8 +129,16 @@ svg {
   gap: 1rem;
 }
 /*index page footer sec*/
+.footer-1-main {
+  font-size: var(--size-3xl);
+}
+.footer-1-desc {
+  font-size: var(--size-base);
+}
 .footer-1-mail {
   display: block;
+  font-size: var(--size-sm);
+  color: var(--clr-slate-400);
 }
 .footer {
   display: grid;
@@ -140,6 +155,19 @@ svg {
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--clr-slate-400);
+  font-weight: 300;
+}
+.footer-link-head {
+  font-weight: 500;
+}
 /*index page join sec*/
 .join {
   display: flex;
@@ -150,6 +178,8 @@ svg {
   text-align: center;
   border: #508c9b solid 0.5px;
   border-radius: 15px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .join--heading {
   font-size: var(--size-3xl);

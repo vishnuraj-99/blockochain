@@ -7,9 +7,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../styles/indexStyle.css" />
-    <link rel="stylesheet" href="./../styles/indexUtils.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/mobileNav.css" />
+    <link rel="stylesheet" href="./styles/indexStyle.css" />
+    <link rel="stylesheet" href="./styles/indexUtils.css" />
+    <title>Home</title>
   </head>
   <body>
     <header class="header container">
@@ -26,6 +27,28 @@
         <ion-icon name="menu-outline" class="header__bars"></ion-icon>
       </nav>
     </header>
+    <!-- mobile navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="" class="mobile-nav__link">Home</a>
+          </li>
+          <li><a href="" class="mobile-nav__link">About</a></li>
+          <li><a href="" class="mobile-nav__link">Product</a></li>
+          <li><a href="" class="mobile-nav__link">Pricing</a></li>
+          <li><a href="" class="mobile-nav__link">contact</a></li>
+          <li><a href="" class="mobile-nav__link">Blog</a></li>
+          <li>
+            <ion-icon
+              name="close-outline"
+              class="header__bars"
+              id="close_icon"
+            ></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <section class="hero container">
         <h1 class="hero__title">
@@ -36,7 +59,7 @@
           Dive into our visionary projects and see how we're bringing the power
           of blockchain to real-world applications
         </p>
-        <button class="btn">get started</button>
+        <a href="pricing.html"><button class="btn">get started</button></a>
       </section>
       <!-- feature heading-->
       <section class="feature_main container section">
@@ -50,7 +73,7 @@
         <div class="features_1">
           <div class="feature__card">
             <img
-              src="https://assets-global.website-files.com/6629ab6f7fe975562ac2fe20/662d719974811b48b7fe60c8_img1.png"
+              src="./img/undraw_Sync_files_re_ws4c__1_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -71,7 +94,7 @@
               implementation
             </p>
             <img
-              src="https://assets-global.website-files.com/6629ab6f7fe975562ac2fe20/662d71997728968b7a441ece_img2.png"
+              src="./img/undraw_Youtube_tutorial_re_69qc__1_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -80,7 +103,7 @@
         <div class="features_2">
           <div class="feature__card">
             <img
-              src="https://assets-global.website-files.com/6629ab6f7fe975562ac2fe20/662d75846e0e4feedf3fb769_img3.png"
+              src="./img/undraw_online_transactions_02ka__2_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -92,7 +115,7 @@
           </div>
           <div class="feature__card">
             <img
-              src="https://assets-global.website-files.com/6629ab6f7fe975562ac2fe20/662d7584977fb64c8704c1f4_img4.png"
+              src="./img/undraw_Security_re_a2rk__3_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -104,7 +127,7 @@
           </div>
           <div class="feature__card">
             <img
-              src="https://assets-global.website-files.com/6629ab6f7fe975562ac2fe20/662d758488062fffaf190cb8_img5.png"
+              src="./img/undraw_connected_world_wuay__2_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -124,7 +147,7 @@
           Protect your data with our privacy-focused solutions, ensuring your
           information remains secure and confidential
         </p>
-        <button class="btn">get started</button>
+        <a href="pricing.html"><button class="btn">get started</button></a>
       </section>
       <!-- footer sec-->
       <section class="footer container section">
@@ -138,32 +161,50 @@
         <div class="footer-2">
           <div class="footer-links-container">
             <p class="footer-link-head">Quick Links</p>
-            <div class="footer-links">
-              <p>Features</p>
-              <p>pricing</p>
-              <p>products</p>
-              <p>About</p>
-              <p>contact</p>
-              <p>blogs</p>
+            <div class="footer-links-wrap">
+              <a href="about.html" class="footer-link">Features</a>
+              <a href="pricing.html" class="footer-link">Pricing</a>
+              <a href="products.html" class="footer-link">Products</a>
+              <a href="about.html" class="footer-link">About</a>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="blog.html" class="footer-link">Blogs</a>
             </div>
           </div>
           <div class="footer-links-container">
             <p class="footer-link-head">Clients</p>
-            <div class="footer-links">
-              <p>google</p>
-              <p>facebook</p>
-              <p>chatgpt</p>
-              <p>About</p>
-              <p>contact</p>
-              <p>blogs</p>
+            <div class="footer-links-wrap">
+              <a
+                href="https://www.google.com/"
+                class="footer-link"
+                target="_blank"
+                >google</a
+              >
+              <a
+                href="https://www.facebook.com/"
+                class="footer-link"
+                target="_blank"
+                >facebook</a
+              >
+              <a href="https://chatgpt.com/" class="footer-link" target="_blank"
+                >chatgpt</a
+              >
             </div>
           </div>
           <div class="footer-links-container">
             <p class="footer-link-head">social</p>
-            <div class="footer-links">
-              <p>facebook</p>
-              <p>twitter</p>
-              <p>youtube</p>
+            <div class="footer-links-wrap">
+              <a
+                href="https://github.com/vishnuraj-99"
+                class="footer-link"
+                target="_blank"
+                >Github</a
+              >
+              <a
+                href="https://www.linkedin.com/in/vishnu-raj-839038194"
+                class="footer-link"
+                target="_blank"
+                >linkdin</a
+              >
             </div>
           </div>
         </div>
@@ -172,6 +213,7 @@
       <section></section> -->
     </main>
     <!-- <footer></footer> -->
+    <script src="./js/mobileNav.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

@@ -92,6 +92,12 @@ svg {
   gap: 1rem;
   border: #508c9b solid 0.5px;
   border-radius: 15px;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 .prod_card_container {
   display: grid;
@@ -99,10 +105,21 @@ svg {
   margin-top: 1rem;
   gap: 1rem;
 }
+.prod__card__sub_heading {
+  color: var(--clr-slate-400);
+}
 
 /*about page footer sec*/
+.footer-1-main {
+  font-size: var(--size-3xl);
+}
+.footer-1-desc {
+  font-size: var(--size-base);
+}
 .footer-1-mail {
   display: block;
+  font-size: var(--size-sm);
+  color: var(--clr-slate-400);
 }
 .footer {
   display: grid;
@@ -118,4 +135,17 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--clr-slate-400);
+  font-weight: 300;
+}
+.footer-link-head {
+  font-weight: 500;
 }

@@ -69,8 +69,16 @@ svg {
 }
 
 /*price page footer sec*/
+.footer-1-main {
+  font-size: var(--size-3xl);
+}
+.footer-1-desc {
+  font-size: var(--size-base);
+}
 .footer-1-mail {
   display: block;
+  font-size: var(--size-sm);
+  color: var(--clr-slate-400);
 }
 .footer {
   display: grid;
@@ -87,6 +95,19 @@ svg {
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--clr-slate-400);
+  font-weight: 300;
+}
+.footer-link-head {
+  font-weight: 500;
+}
 /*price page join sec*/
 .join {
   display: flex;
@@ -95,8 +116,9 @@ svg {
   justify-content: center;
   gap: 0.5rem;
   text-align: center;
-  border: #508c9b solid 0.5px;
-  border-radius: 15px;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .join--heading {
   font-size: var(--size-3xl);

@@ -93,6 +93,10 @@ svg {
   gap: 1rem;
   border: #508c9b solid 0.5px;
   border-radius: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .features_1 {
@@ -116,9 +120,13 @@ svg {
   text-align: center;
   border: #508c9b solid 0.5px;
   border-radius: 15px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .join--heading {
   font-size: var(--size-3xl);
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .join--desc {
   font-size: var(--size-sm);
@@ -138,11 +146,18 @@ svg {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 0.5rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .integration-icon {
   font-size: 2rem;
+}
+.tool-desc {
+  font-size: var(--size-sm);
+}
+.tool-name {
+  font-size: var(--size-2xl);
 }
 /*about page footer sec*/
 .footer-1-mail {
@@ -162,4 +177,17 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--clr-slate-400);
+  font-weight: 300;
+}
+.footer-link-head {
+  font-weight: 500;
 }

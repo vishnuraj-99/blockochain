@@ -95,6 +95,19 @@ svg {
   flex-direction: column;
   gap: 0.5rem;
 }
+.footer-links-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-link {
+  text-decoration: none;
+  color: var(--clr-slate-400);
+  font-weight: 300;
+}
+.footer-link-head {
+  font-weight: 500;
+}
 /*blog page join sec*/
 .join {
   display: flex;
@@ -111,6 +124,10 @@ svg {
   font-size: var(--size-sm);
 }
 /*blog page blog sec*/
+
+.--container p {
+  margin-bottom: 0.5rem;
+}
 
 .blog-container {
   display: grid;

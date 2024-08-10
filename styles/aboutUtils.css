@@ -167,6 +167,9 @@
   .container {
     max-width: 768px;
   }
+  .tool-desc {
+    font-size: var(--size-md);
+  }
 }
 /* lg */
 @media (min-width: 1024px) {

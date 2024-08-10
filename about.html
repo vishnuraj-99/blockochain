@@ -8,8 +8,9 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./../styles/aboutStyle.css" />
-    <link rel="stylesheet" href="./../styles/aboutUtils.css" />
+    <link rel="stylesheet" href="./styles/mobileNav.css" />
+    <link rel="stylesheet" href="./styles/aboutStyle.css" />
+    <link rel="stylesheet" href="./styles/aboutUtils.css" />
   </head>
   <body>
     <header class="header container">
@@ -26,6 +27,28 @@
         <ion-icon name="menu-outline" class="header__bars"></ion-icon>
       </nav>
     </header>
+    <!-- mobile navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="index.html" class="mobile-nav__link">Home</a>
+          </li>
+          <li><a href="about.html" class="mobile-nav__link">About</a></li>
+          <li><a href="products.html" class="mobile-nav__link">Product</a></li>
+          <li><a href="pricing.html" class="mobile-nav__link">Pricing</a></li>
+          <li><a href="contact.html" class="mobile-nav__link">contact</a></li>
+          <li><a href="blog.html" class="mobile-nav__link">Blog</a></li>
+          <li>
+            <ion-icon
+              name="close-outline"
+              class="header__bars"
+              id="close_icon"
+            ></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <!-- feature heading-->
       <section class="feature_main container section">
@@ -39,7 +62,7 @@
         <div class="features_1">
           <div class="feature__card">
             <img
-              src="./../img/undraw_Sync_files_re_ws4c__1_-removebg-preview.png"
+              src="./img/undraw_Sync_files_re_ws4c__1_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -60,7 +83,7 @@
               implementation
             </p>
             <img
-              src="./../img/undraw_Youtube_tutorial_re_69qc__1_-removebg-preview.png"
+              src="./img/undraw_Youtube_tutorial_re_69qc__1_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -69,7 +92,7 @@
         <div class="features_2">
           <div class="feature__card">
             <img
-              src="./../img/undraw_online_transactions_02ka__2_-removebg-preview.png"
+              src="./img/undraw_online_transactions_02ka__2_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -81,7 +104,7 @@
           </div>
           <div class="feature__card">
             <img
-              src="./../img/undraw_Security_re_a2rk__3_-removebg-preview.png"
+              src="./img/undraw_Security_re_a2rk__3_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -93,7 +116,7 @@
           </div>
           <div class="feature__card">
             <img
-              src="./../img/undraw_connected_world_wuay__2_-removebg-preview.png"
+              src="./img/undraw_connected_world_wuay__2_-removebg-preview.png"
               alt=""
               class="feature__card__img"
             />
@@ -164,7 +187,7 @@
           finance (DeFi) solutions, enabling users to manage assets, execute
           transactions, and access financial services without intermediaries.
         </p>
-        <button class="btn">get started</button>
+        <a href="pricing.html"><button class="btn">get started</button></a>
       </section>
       <section class="join container section">
         <p class="span">INTEROPERABILITY</p>
@@ -177,7 +200,7 @@
           efficient data and asset transfers across various blockchain networks.
           Experience a unified and streamlined blockchain ecosystem.
         </p>
-        <button class="btn">Learn More</button>
+        <a href="about.html"><button class="btn">Learn More</button></a>
       </section>
       <section class="join container section">
         <p class="span">SIGN UP</p>
@@ -188,7 +211,7 @@
           insights, and collaborate on groundbreaking projects. Together, we're
           shaping the future of decentralized technology
         </p>
-        <button class="btn">Learn More</button>
+        <a href="pricing.html"><button class="btn">Learn More</button></a>
       </section>
     </main>
     <!-- footer sec-->
@@ -203,36 +226,34 @@
       <div class="footer-2">
         <div class="footer-links-container">
           <p class="footer-link-head">Quick Links</p>
-          <div class="footer-links">
-            <p>Features</p>
-            <p>pricing</p>
-            <p>products</p>
-            <p>About</p>
-            <p>contact</p>
-            <p>blogs</p>
+          <div class="footer-links-wrap">
+            <a href="about.html" class="footer-link">Features</a>
+            <a href="pricing.html" class="footer-link">Pricing</a>
+            <a href="products.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="blog.html" class="footer-link">Blogs</a>
           </div>
         </div>
         <div class="footer-links-container">
           <p class="footer-link-head">Clients</p>
-          <div class="footer-links">
-            <p>google</p>
-            <p>facebook</p>
-            <p>chatgpt</p>
-            <p>About</p>
-            <p>contact</p>
-            <p>blogs</p>
+          <div class="footer-links-wrap">
+            <a href="" class="footer-link">google</a>
+            <a href="" class="footer-link">facebook</a>
+            <a href="" class="footer-link">chatgpt</a>
           </div>
         </div>
         <div class="footer-links-container">
           <p class="footer-link-head">social</p>
-          <div class="footer-links">
-            <p>facebook</p>
-            <p>twitter</p>
-            <p>youtube</p>
+          <div class="footer-links-wrap">
+            <a href="" class="footer-link">Github</a>
+            <a href="" class="footer-link">linkdin</a>
+            <a href="" class="footer-link">facebook</a>
           </div>
         </div>
       </div>
     </section>
+    <script src="./js/mobileNav.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

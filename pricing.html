@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>features</title>
-    <link rel="stylesheet" href="./../styles/pricingStyle.css" />
-    <link rel="stylesheet" href="./../styles/pricingUtils.css" />
+    <link rel="stylesheet" href="./styles/mobileNav.css" />
+    <link rel="stylesheet" href="./styles/pricingStyle.css" />
+    <link rel="stylesheet" href="./styles/pricingUtils.css" />
   </head>
   <body>
     <header class="header container">
@@ -22,6 +23,28 @@
         <ion-icon name="menu-outline" class="header__bars"></ion-icon>
       </nav>
     </header>
+    <!-- mobile navigation-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="index.html" class="mobile-nav__link">Home</a>
+          </li>
+          <li><a href="about.html" class="mobile-nav__link">About</a></li>
+          <li><a href="products.html" class="mobile-nav__link">Product</a></li>
+          <li><a href="pricing.html" class="mobile-nav__link">Pricing</a></li>
+          <li><a href="contact.html" class="mobile-nav__link">contact</a></li>
+          <li><a href="blog.html" class="mobile-nav__link">Blog</a></li>
+          <li>
+            <ion-icon
+              name="close-outline"
+              class="header__bars"
+              id="close_icon"
+            ></ion-icon>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- main-->
     <main>
       <!--  join section -->
@@ -118,36 +141,55 @@
       <div class="footer-2">
         <div class="footer-links-container">
           <p class="footer-link-head">Quick Links</p>
-          <div class="footer-links">
-            <p>Features</p>
-            <p>pricing</p>
-            <p>products</p>
-            <p>About</p>
-            <p>contact</p>
-            <p>blogs</p>
+          <div class="footer-links-wrap">
+            <a href="about.html" class="footer-link">Features</a>
+            <a href="pricing.html" class="footer-link">Pricing</a>
+            <a href="products.html" class="footer-link">Products</a>
+            <a href="about.html" class="footer-link">About</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="blog.html" class="footer-link">Blogs</a>
           </div>
         </div>
         <div class="footer-links-container">
           <p class="footer-link-head">Clients</p>
-          <div class="footer-links">
-            <p>google</p>
-            <p>facebook</p>
-            <p>chatgpt</p>
-            <p>About</p>
-            <p>contact</p>
-            <p>blogs</p>
+          <div class="footer-links-wrap">
+            <a
+              href="https://www.google.com/"
+              class="footer-link"
+              target="_blank"
+              >google</a
+            >
+            <a
+              href="https://www.facebook.com/"
+              class="footer-link"
+              target="_blank"
+              >facebook</a
+            >
+            <a href="https://chatgpt.com/" class="footer-link" target="_blank"
+              >chatgpt</a
+            >
           </div>
         </div>
         <div class="footer-links-container">
           <p class="footer-link-head">social</p>
-          <div class="footer-links">
-            <p>facebook</p>
-            <p>twitter</p>
-            <p>youtube</p>
+          <div class="footer-links-wrap">
+            <a
+              href="https://github.com/vishnuraj-99"
+              class="footer-link"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/vishnu-raj-839038194"
+              class="footer-link"
+              target="_blank"
+              >linkdin</a
+            >
           </div>
         </div>
       </div>
     </section>
+    <script src="./js/mobileNav.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
