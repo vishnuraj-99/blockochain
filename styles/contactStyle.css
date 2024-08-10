@@ -171,6 +171,7 @@ textarea::placeholder {
 }
 .field-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 3rem;
@@ -216,4 +217,16 @@ textarea::placeholder {
   width: 20rem;
 
   border: none;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none; /* Hide error messages by default */
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #007bff;
+  border-color: #007bff;
 }

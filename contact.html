@@ -70,6 +70,7 @@
                   id="firstname"
                   placeholder="firstname"
                 />
+                <div class="error" id="firstnameError"></div>
               </div>
               <div class="field-container">
                 <input
@@ -79,18 +80,20 @@
                   id="lastname"
                   placeholder="lastname"
                 />
+                <div class="error" id="lastnameError"></div>
               </div>
             </div>
             <!-- 2nd row-->
             <div class="inp-row2">
               <div class="field-container">
                 <input
-                  type="email"
+                  type="text"
                   name="email"
                   id="email"
                   placeholder="email"
                   class="email"
                 />
+                <div class="error" id="emailError"></div>
               </div>
               <div class="field-container">
                 <input
@@ -100,16 +103,20 @@
                   placeholder="phone number"
                   class="phone"
                 />
+                <div class="error" id="phoneError"></div>
               </div>
             </div>
             <!-- 3 rd row-->
             <div class="inp-row3">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="your message"
-                class="message"
-              ></textarea>
+              <div class="field-container">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="your message"
+                  class="message"
+                ></textarea>
+                <div class="error" id="messageError"></div>
+              </div>
             </div>
             <!-- button -->
             <button type="submit" class="btn">submit</button>
@@ -177,6 +184,7 @@
         </div>
       </div>
     </section>
+    <script src="./js/formValidation.js"></script>
     <script src="./js/mobileNav.js"></script>
     <script
       type="module"
